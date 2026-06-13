@@ -1,0 +1,62 @@
+﻿@media (max-width: 768px) {
+  body { padding: 0; overflow: auto; align-items: flex-start; }
+  .app { flex-direction: column; max-width: 100%; width: 100%; height: 100dvh; border-radius: 0; box-shadow: none; }
+  .sidebar { width: 100%; height: auto; flex-direction: row; overflow-x: auto; overflow-y: hidden; order: 2; flex-shrink: 0; border-top: 1px solid rgba(255,255,255,.08); }
+  .sidebar::after { display: none; }
+  .sb-header { display: none; }
+  .sb-nav { display: flex; flex-direction: row; overflow-x: auto; overflow-y: hidden; padding: 0; width: 100%; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+  .sb-nav::-webkit-scrollbar { display: none; }
+  .nav-group { flex-shrink: 0; margin-top: 0; }
+  .nav-top { padding: 12px 14px; margin: 0; border-radius: 0; border-left: none !important; border-bottom: 3px solid transparent; white-space: nowrap; font-size: 11px; }
+  .nav-top.active-nav { background: transparent; border-bottom-color: var(--accent-blue); padding-left: 14px; }
+  .nav-chev { display: none; }
+  .nav-sub { display: none !important; }
+  .meeting-action-row { display: none !important; }
+  .inline-add-row { display: none !important; }
+  .main { order: 1; flex: 1; min-height: 0; overflow: hidden; }
+  .home-grid-3 { grid-template-columns: 1fr 1fr; gap: 8px; }
+  .home-grid-2 { grid-template-columns: 1fr; }
+  .home-quick-grid { grid-template-columns: 1fr 1fr; }
+  .home-hero { flex-direction: column; gap: 10px; }
+  .home-hero-right { align-items: flex-start; }
+  .home-scroll { padding: 14px; }
+  .meta-r1 { grid-template-columns: 1fr; }
+  .meta-r2 { grid-template-columns: 1fr 1fr; }
+  .f-row { grid-template-columns: 1fr; }
+  .form-scroll { padding: 14px 16px; }
+  .pf-footer { flex-wrap: wrap; gap: 8px; }
+  .footer-btns2 { flex-wrap: wrap; }
+  .db-stats { grid-template-columns: 1fr 1fr; }
+  .db-two { grid-template-columns: 1fr; }
+  .db-scroll { padding: 12px; }
+  .toolbar { overflow-x: auto; }
+  .meta-zone { padding: 10px 12px; }
+  .editor-zone { padding: 12px; }
+  .footer-zone { padding: 8px 12px; }
+  .stats { grid-template-columns: 1fr 1fr; }
+  .grid-two { grid-template-columns: 1fr; }
+  .quick-grid { grid-template-columns: 1fr; }
+  .form-grid { grid-template-columns: 1fr; }
+  .page-scroll { padding: 14px; }
+  .pm-kanban { grid-template-columns: 1fr; }
+  .pm-meeting-layout { grid-template-columns: 1fr; }
+  .pm-meeting-list-panel { max-height: 200px; }
+  .pm-team-management { grid-template-columns: 1fr; }
+  .pm-form-grid { grid-template-columns: 1fr; }
+  .pm-tab-body { padding: 12px; }
+  .content-grid { grid-template-columns: 1fr; }
+  .field-row { grid-template-columns: 1fr; }
+  .sso-grid { grid-template-columns: 1fr; }
+  .perm-grid { grid-template-columns: 1fr; }
+  .next-actions { grid-template-columns: 1fr; }
+  .pay-modal { width: calc(100% - 24px); }
+  .plan-cards { grid-template-columns: 1fr; }
+  .top-bar { padding: 0 12px; height: 42px; }
+  .top-bar-sub { display: none; }
+}
+@media (max-width: 480px) {
+  .home-grid-3 { grid-template-columns: 1fr; }
+  .home-quick-grid { grid-template-columns: 1fr; }
+  .meta-r2 { grid-template-columns: 1fr; }
+  .action-grid { grid-template-columns: 1fr; }
+}
